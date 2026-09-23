@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Phones</title>
+    <!-- common css -->
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- page css -->
+    <link rel="stylesheet" href="assets/css/admin.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo"> BBD Resale Calculator </a>
+
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link"> Calculator </a>
+
+          <a href="admin.html" class="nav-link active"> Manage Phones </a>
+        </nav>
+      </div>
+    </header>
+    <main class="admin-page">
+      <section class="panel">
+        <h1>Manage Phones</h1>
+
+        <p class="muted">
+          Add, edit or delete phones used by the BBD Resale Calculator.
+        </p>
+
+        <div id="status" class="status"></div>
+
+        <form id="phoneForm">
+          <div class="admin-form">
+            <label>
+              Phone Name
+              <input
+                id="phoneName"
+                type="text"
+                placeholder="e.g. Vivo X300 Ultra"
+                required
+              />
+            </label>
+
+            <label>
+              Category
+              <input
+                id="phoneCategory"
+                type="text"
+                placeholder="e.g. 16+512GB Photographer Kit"
+                required
+              />
+            </label>
+
+            <label>
+              Market Price ₹
+              <input
+                id="marketPrice"
+                type="number"
+                min="0"
+                step="1"
+                placeholder="209999"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="admin-actions">
+            <button type="submit" id="saveBtn" class="primary">
+              Add Phone
+            </button>
+
+            <button
+              type="button"
+              id="cancelBtn"
+              class="secondary"
+              style="display: none"
+            >
+              Cancel Edit
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+          "
+        >
+          <div>
+            <h2>Phone List</h2>
+            <p class="muted">
+              Total phones: <strong id="phoneCount">0</strong>
+            </p>
+          </div>
+
+          <div class="admin-actions">
+            <button type="button" id="importBtn" class="primary">Import</button>
+            <input
+              type="file"
+              id="importFile"
+              accept=".json,application/json"
+              hidden
+            />
+
+            <button type="button" id="exportBtn" class="export-btn">
+              Export
+            </button>
+
+            <button type="button" id="resetBtn" class="reset-btn">
+              Reset List
+            </button>
+          </div>
+        </div>
+
+        <div class="phone-table-wrapper">
+          <table class="phone-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Market Price</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+
+            <tbody id="phoneTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/data/phones.js"></script>
+    <script src="assets/js/admin.js"></script>
+  </body>
+</html>

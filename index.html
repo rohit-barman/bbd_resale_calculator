@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BBD Resale Calculator</title>
+    <!-- common css -->
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo"> BBD Resale Calculator </a>
+
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link active"> Calculator </a>
+
+          <a href="admin.html" class="nav-link"> Manage Phones </a>
+        </nav>
+      </div>
+    </header>
+    <main class="app">
+      <section class="panel phone-panel">
+        <h1>BBD Resale Calculator</h1>
+        <p class="muted">
+          Select a phone with your pre-saved local market price.
+        </p>
+        <input
+          id="search"
+          class="input search"
+          type="search"
+          placeholder="Search iPhone, Samsung, OnePlus..."
+        />
+        <div id="phoneList"></div>
+      </section>
+
+      <section class="panel calculator-panel">
+        <h2 id="selectedName">Select a phone</h2>
+        <p id="marketText" class="muted">Choose a model from the list.</p>
+
+        <div class="form-grid">
+          <label>
+            BBD Purchase Price ₹
+            <input
+              id="buyPrice"
+              class="input"
+              type="number"
+              min="0"
+              step="1"
+              placeholder="e.g. 52000"
+            />
+          </label>
+
+          <label>
+            Card Discount ₹
+            <input
+              id="discount"
+              class="input"
+              type="number"
+              min="0"
+              step="1"
+              value="0"
+            />
+          </label>
+
+          <label>
+            Other Cashback ₹
+            <input
+              id="cashback"
+              class="input"
+              type="number"
+              min="0"
+              step="1"
+              value="0"
+            />
+          </label>
+
+          <label>
+            Units
+            <input
+              id="units"
+              class="input"
+              type="number"
+              min="1"
+              step="1"
+              value="1"
+            />
+          </label>
+        </div>
+
+        <div class="metrics">
+          <div class="metric">
+            <span>Effective Cost</span>
+            <strong id="effective">₹0</strong>
+          </div>
+          <div class="metric">
+            <span>Expected Profit / Unit</span>
+            <strong id="profit">₹0</strong>
+          </div>
+          <div class="metric">
+            <span>Profit %</span>
+            <strong id="profitPct">0%</strong>
+          </div>
+          <div class="metric">
+            <span>Total Profit</span>
+            <strong id="totalProfit">₹0</strong>
+          </div>
+        </div>
+
+        <div id="decision" class="decision neutral" aria-live="polite">
+          Enter the BBD price to calculate.
+        </div>
+
+        <div class="actions">
+          <button id="exportBtn" type="button">Export JSON</button>
+        </div>
+
+        <p class="muted small">
+          Default rule: BUY ≥ 8% margin, NEGOTIATE 4–8%, SKIP &lt; 4%. Change
+          thresholds in app.js.
+        </p>
+      </section>
+    </main>
+
+    <script src="assets/data/phones.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

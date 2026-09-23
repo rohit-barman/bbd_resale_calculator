@@ -1,0 +1,124 @@
+.admin-page {
+  max-width: 1100px;
+  margin: 25px auto;
+}
+
+.admin-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.admin-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.secondary {
+  background: #6b7280;
+  color: white;
+}
+
+.danger {
+  background: #dc2626;
+  color: white;
+}
+
+.phone-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.phone-table th,
+.phone-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.phone-table th {
+  background: #f5f5f5;
+}
+
+.table-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.edit-btn {
+  background: #f59e0b;
+  color: white;
+}
+
+.delete-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.export-btn {
+  background: #059669;
+  color: white;
+}
+
+.reset-btn {
+  background: #7c3aed;
+  color: white;
+}
+
+.status {
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 6px;
+  background: #ecfdf5;
+  color: #065f46;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .admin-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .phone-table {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  .admin-form {
+    grid-template-columns: 1fr;
+  }
+
+  .phone-table-wrapper {
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,80 @@
+let phones = [
+  // X SERIES
+  {
+    id: 1,
+    name: "Vivo X300 Ultra",
+    category: "16+512GB Photographer Kit",
+    marketPrice: 209999,
+  },
+  { id: 2, name: "Vivo X300 Ultra", category: "16+512GB", marketPrice: 159999 },
+  { id: 3, name: "Vivo X300 Pro", category: "16+512GB", marketPrice: 119999 },
+  { id: 4, name: "Vivo X300 FE", category: "12+512GB", marketPrice: 99999 },
+  { id: 5, name: "Vivo X300 FE", category: "12+256GB", marketPrice: 89999 },
+  { id: 6, name: "Vivo X300 FE", category: "8+256GB", marketPrice: 84999 },
+  { id: 7, name: "Vivo X300", category: "16+512GB", marketPrice: 85999 },
+  { id: 8, name: "Vivo X300", category: "12+512GB", marketPrice: 81999 },
+  { id: 9, name: "Vivo X300", category: "12+256GB", marketPrice: 75999 },
+
+  // V SERIES
+  { id: 10, name: "Vivo V70 Elite", category: "12+256GB", marketPrice: 71999 },
+  { id: 11, name: "Vivo V70 Elite", category: "8+256GB", marketPrice: 66999 },
+  { id: 12, name: "Vivo V70", category: "12+256GB", marketPrice: 64999 },
+  { id: 13, name: "Vivo V70", category: "8+256GB", marketPrice: 59999 },
+  { id: 14, name: "Vivo V70 FE", category: "12+256GB", marketPrice: 51999 },
+  { id: 15, name: "Vivo V70 FE", category: "8+256GB", marketPrice: 49999 },
+  { id: 16, name: "Vivo V70 FE", category: "8+128GB", marketPrice: 44999 },
+
+  // S SERIES
+  { id: 17, name: "Vivo S2", category: "8+256GB", marketPrice: 44999 },
+  { id: 18, name: "Vivo S2", category: "8+128GB", marketPrice: 39999 },
+
+  // Y SERIES
+  { id: 19, name: "Vivo Y51 Pro 5G", category: "8+256GB", marketPrice: 37999 },
+  { id: 20, name: "Vivo Y51 Pro 5G", category: "8+128GB", marketPrice: 32999 },
+  { id: 21, name: "Vivo Y400 5G", category: "8+256GB", marketPrice: 34999 },
+  { id: 22, name: "Vivo Y400 5G", category: "8+128GB", marketPrice: 31999 },
+  { id: 23, name: "Vivo Y31 5G", category: "6+256GB", marketPrice: 31999 },
+  { id: 24, name: "Vivo Y31 5G", category: "6+128GB", marketPrice: 27999 },
+  { id: 25, name: "Vivo Y31 5G", category: "4+128GB", marketPrice: 19999 },
+  { id: 26, name: "Vivo Y31t 5G", category: "4+128GB", marketPrice: 25999 },
+  { id: 27, name: "Vivo Y31t 5G", category: "6+128GB", marketPrice: 29999 },
+  { id: 28, name: "Vivo Y31t 5G", category: "6+256GB", marketPrice: 34999 },
+  { id: 29, name: "Vivo Y21 5G", category: "6+128GB", marketPrice: 26499 },
+  { id: 30, name: "Vivo Y21 5G", category: "8+128GB", marketPrice: 22999 },
+  { id: 31, name: "Vivo Y21 5G", category: "4+128GB", marketPrice: 22499 },
+  { id: 32, name: "Vivo Y21 5G", category: "4+64GB", marketPrice: 19499 },
+  { id: 33, name: "Vivo Y11 5G", category: "4+128GB", marketPrice: 20999 },
+  { id: 34, name: "Vivo Y11 5G", category: "4+64GB", marketPrice: 17999 },
+  { id: 35, name: "Vivo Y05", category: "4+64GB", marketPrice: 14999 },
+
+  // T SERIES
+  { id: 36, name: "Vivo T5 Pro 5G", category: "12+256GB", marketPrice: 39999 },
+  { id: 37, name: "Vivo T5 Pro 5G", category: "8+256GB", marketPrice: 46999 },
+  { id: 38, name: "Vivo T5 Pro 5G", category: "8+128GB", marketPrice: 41999 },
+  { id: 39, name: "Vivo T5x 5G", category: "8+256GB", marketPrice: 30999 },
+  { id: 40, name: "Vivo T5x 5G", category: "8+128GB", marketPrice: 27999 },
+  { id: 41, name: "Vivo T5x 5G", category: "6+128GB", marketPrice: 24999 },
+  {
+    id: 42,
+    name: "Vivo T5 Lite 44W 5G",
+    category: "6+256GB",
+    marketPrice: 24999,
+  },
+  {
+    id: 43,
+    name: "Vivo T5 Lite 44W 5G",
+    category: "6+128GB",
+    marketPrice: 21999,
+  },
+  {
+    id: 44,
+    name: "Vivo T5 Lite 44W 5G",
+    category: "4+128GB",
+    marketPrice: 19999,
+  },
+  { id: 45, name: "Vivo T4 Lite 5G", category: "8+256GB", marketPrice: 23999 },
+  { id: 46, name: "Vivo T4 Lite 5G", category: "6+128GB", marketPrice: 20999 },
+  { id: 47, name: "Vivo T4 Lite 5G", category: "4+128GB", marketPrice: 18999 },
+  { id: 48, name: "Vivo T4 Lite 5G", category: "4+64GB", marketPrice: 16999 },
+  { id: 49, name: "Vivo T5e", category: "4+64GB", marketPrice: 14999 },
+];
